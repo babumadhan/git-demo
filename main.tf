@@ -5,7 +5,4 @@ provider "aws" {
 resource "aws_instance" "example" {
     ami           = "ami-0866a3c8686eaeeba"  # Specify an appropriate AMI ID
     instance_type = "t2.micro" #specify the instance type
-tags = {
-	name = "test-cicd-instance"
-}
 }
